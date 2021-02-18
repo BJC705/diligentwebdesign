@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diligent Web Design - Toronto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Background -->
+
+
+    <canvas id=c></canvas>
+    <div class="background"><img src="images/background.png" alt="Dimond Leather Background"></div>
+
+    <!-- Header -->
+    <header>
+        <a href="about.html" id="one">
+            <li>About</li>
+        </a>
+        <a href="services.html" id="two">
+            <li>Services</li>
+        </a>
+        <img src="images/dwd logo.png" onclick="returnHome()" alt="" id="five">
+        <a href="contact.html" id="three">
+            <li>Contact</li>
+        </a>
+        <a href="tel:1-705-351-0819" id="four">
+            <li class="phone">705-351-0819</li>
+        </a>
+    </header>
+
+    <div class="mobile-header">
+        <img src="images/dwd logo.png" onclick="returnHome()" alt="" id="three">
+        <div id="four"> <button id="menu-icon" onclick="displayMobileNav(); peaceMenuIcon();"><li style="list-style: url('images/hamburger.png');">Menu</li></button></div>
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-row-1">
+                <a href="about.html" id="one">
+                    <li>About</li>
+                </a>
+                <a href="services.html" id="two">
+                    <li>Services</li>
+                </a>
+            </div>
+            <div class="mobile-nav-row-2">
+                <a href="contact.html" id="three">
+                    <li>Contact</li>
+                </a>
+                <a href="tel:1-705-351-0819" id="four">
+                    <li class="phone">705-351-0819</li>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+
+    <div class="main-content" id="six">
+        <h1 class="main-h1" id="six">Welcome</h1>
+
+        <img src="images/technology.png" class="devices" id="devices" alt="Responsive Devices">
+        <p class="main-p" id="six">
+            Stand out from other companies with a unique design. Diligent will make your brilliant ideas become a reality. We are budget-friendly and will always meet your deadline. From clean code to custom graphics we do it all. <br> <br>Whether you
+            need a makeover on your current website, need data updated, or looking for a completely new website our prices vary. Below is a pricing chart with no additional fees.
+
+        </p>
+
+        <div class="price-list">
+            <a href="#price" id="six"> <button onclick="displayPriceList()" id="pricesButton"><li class="price-button">Price chart</li></button> </a>
+        </div>
+
+    </div>
+
+    <div class="price-chart" id="price">
+        <div class="price">
+            <h2>Basic</h2>
+            <h2>$599 <span>plus tax</span> </h2>
+            <h3>No additional fees</h3>
+            <ul>
+                <li>Up to 6 pages</li>
+                <li>Unlimited images</li>
+                <li>Responsive Web Design</li>
+                <li>Social Media linking</li>
+                <li>Contact section</li>
+            </ul>
+        </div>
+        <div class="price">
+            <h2>Advanced</h2>
+            <h2>$799 <span>plus tax</span> </h2>
+            <h3>No additional fees</h3>
+            <ul>
+                <li>Up to 10 pages</li>
+                <li>Unlimited images</li>
+                <li>Responsive Web Design</li>
+                <li>Social Media linking</li>
+                <li>Contact section</li>
+            </ul>
+        </div>
+        <div class="price">
+            <h2>Pro</h2>
+            <h2>$1199 <span>plus tax</span> </h2>
+            <h3>No additional fees</h3>
+            <ul>
+                <li>Unlimited Pages</li>
+                <li>Unlimited images</li>
+                <li>Responsive Web Design</li>
+                <li>Social Media linking</li>
+                <li>Contact section</li>
+            </ul>
+        </div>
+        <div class="price">
+            <h2>Face Lift</h2>
+            <h2>$599 <span>plus tax</span> </h2>
+            <h3>No additional fees</h3>
+            <ul>
+                <li>New Logo Design</li>
+                <li>New website color theme</li>
+                <li>Updated links</li>
+                <li>Updated text and images</li>
+
+            </ul>
+        </div>
+        <button onclick="exitPriceList()" class="xBtn"> <img src="images/xbtn.png" class="xIcon" alt=""></button>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <a href="tel:1-705-351-0819"> <img src="images/iphone-icon.png" alt=""></a>
+        <p>705-351-0819</p>
+        <a href="mailto: CONTACT.DILIGENTWEBDESIGN@GMAIL.COM"> <img src="images/email-icon.png" alt=""> </a>
+        <p>Contact.DiligentWebDesign@Gmail.com</p>
+        <a href="https://www.instagram.com/diligentwebdesign/" target="_blank"> <img src="images/instagram.png" alt=""> </a>
+        <p>DiligentWebDesign</p>
+        <img src="images/dwd logo footer.png" alt="">
+        <p>2021 DILIGENT WEB DESIGN INC. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <div class="mobile-footer">
+        <img src="images/dwd logo footer.png" alt="">
+        <p>2021 DILIGENT WEB DESIGN INC. ALL RIGHTS RESERVED.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js " integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js " integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin=" anonymous "></script>
+    <script src="background.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diligent Web Design - Toronto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background -->
+    <canvas id=c></canvas>
+    <div class="background"><img src="images/background.png" alt="Dimond Leather Background"></div>
+
+    <!-- Header -->
+    <header>
+        <a href="about.html">
+            <li>About</li>
+        </a>
+        <a href="services.html">
+            <li>Services</li>
+        </a>
+        <img src="images/dwd logo.png" onclick="returnHome()" alt="">
+        <a href="contact.html">
+            <li style="list-style: url('images/dimond.png')">Contact</li>
+        </a>
+        <a href="tel:1-705-351-0819">
+            <li class="phone">705-351-0819</li>
+        </a>
+    </header>
+
+    <div class="mobile-header">
+        <img src="images/dwd logo.png" onclick="returnHome()" alt="" id="three">
+        <div id="four"> <button id="menu-icon" onclick="displayMobileNav(); peaceMenuIcon();"><li style="list-style: url('images/hamburger.png');">Menu</li></button></div>
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-row-1">
+                <a href="about.html" id="one">
+                    <li>About</li>
+                </a>
+                <a href="services.html" id="two">
+                    <li>Services</li>
+                </a>
+            </div>
+            <div class="mobile-nav-row-2">
+                <a href="contact.html" id="three">
+                    <li>Contact</li>
+                </a>
+                <a href="tel:1-705-351-0819" id="four">
+                    <li class="phone">705-351-0819</li>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Content -->
+    <div class="contact">
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbxeZmXOeR6l68VL0eTaohBN0jlNJPklWdTMxZc_/exec">
+
+            <div class="thankyou_message" style="display:none;">
+                <h2>Thanks for reaching out. We will get in touch with you soon.</h2>
+            </div>
+            <div class="form-elements">
+                <h2>Contact Us</h2>
+                <label for="name"> </label>
+                <input id="name" name="name" placeholder="Name" />
+
+                <label for="email"></label>
+                <input id="email" name="email" type="email" value="" required placeholder="Email" />
+
+                <label for="name"> </label>
+                <input id="phone" name="name" placeholder="Phone" />
+
+                <label for="message"></label>
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+
+                <button class="button-success pure-button button-xlarge"><li>Send</li>
+                </button>
+            </div>
+            <div class="phone-email">
+                <a href="tel:1-705-351-0819">
+                    <li class="phone-num">Phone: 705-351-0819</li>
+                </a>
+                <a href="mailto: CONTACT.DILIGENTWEBDESIGN@GMAIL.COM">
+                    <li class="email-ad">Email: CONTACT.DILIGENTWEBDESIGN@GMAIL.COM</li>
+                </a>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1BBuYCapLQllf-im7xzcWATXJZPeWLHFX"></iframe>
+            </div>
+        </form>
+    </div>
+    <!-- footer -->
+    <footer>
+        <a href="tel:1-705-351-0819"> <img src="images/iphone-icon.png" alt=""></a>
+        <p>705-351-0819</p>
+        <a href="mailto: CONTACT.DILIGENTWEBDESIGN@GMAIL.COM"> <img src="images/email-icon.png" alt=""> </a>
+        <p>Contact.DiligentWebDesign@Gmail.com</p>
+        <a href="https://www.instagram.com/diligentwebdesign/" target="_blank"> <img src="images/instagram.png" alt=""> </a>
+        <p>DiligentWebDesign</p>
+        <img src="images/dwd logo footer.png" alt="">
+        <p>2021 DILIGENT WEB DESIGN INC. ALL RIGHTS RESERVED.PRIVACY POLICY.DISCLAIMER.</p>
+    </footer>
+    <div class="mobile-footer">
+        <img src="images/dwd logo footer.png" alt="">
+        <p>2021 DILIGENT WEB DESIGN INC. ALL RIGHTS RESERVED.</p>
+    </div>
+
+    <script src="form-submission-handler.js"></script>
+    <script src="background.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

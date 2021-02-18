@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diligent Web Design - Toronto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Background -->
+    <canvas id=c></canvas>
+    <div class="background"><img src="images/background.png" alt="Dimond Leather Background"></div>
+
+    <!-- Header -->
+    <header>
+        <a href="about.html">
+            <li>About</li>
+        </a>
+        <a href="services.html">
+            <li style="list-style: url('images/dimond.png')">Services</li>
+        </a>
+        <img src="images/dwd logo.png" onclick="returnHome()" alt="">
+        <a href="contact.html">
+            <li>Contact</li>
+        </a>
+        <a href="tel:1-705-351-0819">
+            <li class="phone">705-351-0819</li>
+        </a>
+    </header>
+
+    <div class="mobile-header">
+        <img src="images/dwd logo.png" onclick="returnHome()" alt="" id="five">
+        <button id="menu-icon" onclick="displayMobileNav(); peaceMenuIcon();"><li style="list-style: url('images/hamburger.png');">Menu</li></button>
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-row-1">
+                <a href="about.html" id="one">
+                    <li>About</li>
+                </a>
+                <a href="services.html" id="two">
+                    <li>Services</li>
+                </a>
+            </div>
+            <div class="mobile-nav-row-2">
+                <a href="contact.html" id="three">
+                    <li>Contact</li>
+                </a>
+                <a href="tel:1-705-351-0819" id="four">
+                    <li class="phone">705-351-0819</li>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Content -->
+    <div class="services">
+        <!-- <h1>Services</h1> -->
+        <h2>Responsive Websites</h2>
+        <p>Nothing can hurt an online sale or lead like a website that forces potential customers to strain their eyes and zoom in with their fingers just to read its content. Now that mobile web surfing has surpassed fixed or desktop web surfing, users
+            expect an easily accessible experience regardless of the device they’re using. Only web designs that respond to any size device will receive Google’s badge of mobile-friendliness that pushes them up in search rankings. <br><br>Responsive web
+            design is simply a method of website development that creates a website that scales itself to any size screen. It allows visitors to easily access, navigate, and utilize your website across multiple web browsers, smart devices and computers.
+            Have you noticed how this site fits its graphics and content comfortably on your smartphone or tablet? This is due to a specific style of coding that tells our site to adapt to any device that can access it.</p>
+        <img src="images/html css js.png" class="html-css-logo" alt="HTML CSS JavaScript Logo">
+
+    </div>
+    <div class="services-content">
+        <div class="services-content-text">
+            <h2>Website maintenance</h2>
+            <p>Website maintenance should be an integral part of your business. When issues are ignored they don’t just disappear; as time passes they can grow and multiply, causing serious problems and setbacks to your potential growth and business health.
+            </p>
+        </div>
+        <div class="services-content-text">
+            <h2>Website Development</h2>
+            <p>Your website is the most important tool for your business. It’s the first impression that you make to your visitors and potential customers. It’s the first thing they see when they look for you online, so you need to make sure you are blowing
+                them away on the first click. We provide professional web design in Toronto, Mississauga, and the GTA, for businesses of any size. No project is too large or too small for us, and we will put our heart and soul into everything we do, regardless
+                of your budget.
+            </p>
+        </div>
+        <div class="services-content-text">
+            <h2>Logo Design</h2>
+            <p>One of the first things that must be considered when marketing a brand is logo design. This is always a challenging aspect since it needs to embody the essence of the business it represents and establish its most visually exposed image. A
+                logo is one of the main faces of your business, and logo design must respond to both current and future branding needs. This means thinking carefully about how it will be viewed across different mediums such as online, mobile, in banners,
+                letter headers, invitations, business cards and much more. Design Adaptability must also be taken seriously from day one to ensure that you will not need to re-design and re-brand sections of your business at a later time.
+            </p>
+        </div>
+        <div class="services-content-text">
+            <h2>SEO</h2>
+            <p>At Diligent Web Design, we believe that our job is to make a technical, complicated, and sometimes overwhelming internet marketing process as simple as possible for our clients. One of the many ways we accomplish this is by providing each
+                of our SEO clients with a single point of contact to manage your project and your questions. You will get to know your Diligent Web Design SEO Professional well and they will get to know your business and understand your unique needs.
+                We will become your outsourced online marketing department.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- footer  -->
+    <footer>
+        <a href="tel:1-705-351-0819"> <img src="images/iphone-icon.png" alt=""></a>
+        <p>705-351-0819</p>
+        <a href="mailto: CONTACT.DILIGENTWEBDESIGN@GMAIL.COM"> <img src="images/email-icon.png" alt=""> </a>
+        <p>Contact.DiligentWebDesign@Gmail.com</p>
+        <a href="https://www.instagram.com/diligentwebdesign/" target="_blank"> <img src="images/instagram.png" alt=""> </a>
+        <p>DiligentWebDesign</p>
+        <img src="images/dwd logo footer.png" alt="">
+        <p>2021 DILIGENT WEB DESIGN INC. ALL RIGHTS RESERVED.PRIVACY POLICY.DISCLAIMER.</p>
+    </footer>
+    <div class="mobile-footer">
+        <img src="images/dwd logo footer.png" alt="">
+        <p>2021 DILIGENT WEB DESIGN INC. ALL RIGHTS RESERVED.</p>
+    </div>
+
+    <script src="background.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

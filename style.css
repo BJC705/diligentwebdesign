@@ -1,0 +1,1160 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background {
+  position: fixed;
+  height: 100vh;
+  z-index: -2;
+}
+
+canvas {
+  position: fixed;
+  z-index: -5;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s;
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.mobile-header {
+  display: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header img {
+  width: 50%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+li {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  list-style: url("images/dummy.png");
+  background: url("images/underline.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-transition: ease-in-out, .4s;
+  transition: ease-in-out, .4s;
+  text-shadow: 3px 3px 6px #000000, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+}
+
+.phone {
+  list-style: url("images/iphone-icon.png");
+}
+
+.phone:hover {
+  list-style: url("images/iphone dummy.png");
+}
+
+header li:hover {
+  list-style: url("images/dimond.png");
+  color: #b4d5e9;
+  margin: 2px 0 0 0;
+}
+
+.main-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 13% 40% 8%;
+      grid-template-rows: 13% 40% 8%;
+  height: 90vh;
+}
+
+.main-content h1 {
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  padding: 30px 10px 10px 30px;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  background: url("images/underline-long.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 200px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 0 200px rgba(0, 0, 0, 0.9);
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-left: 10%;
+  font-size: 2rem;
+  color: white;
+}
+
+.main-content p {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-size: 1.1rem;
+  width: 80%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  padding: 30px 10px 10px 30px;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  color: white;
+}
+
+.devices {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  width: 100%;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.price-list {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.price-list button {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.price-button {
+  list-style: url("images/dollar.png");
+  padding: 10px;
+  background: url("images/underline.png");
+  background-position: bottom;
+  background-repeat: space;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.price-list .price-button:hover {
+  background: url("images/button-hover.png");
+  background-position: bottom;
+  background-repeat: space;
+  list-style: url("images/dimond.png");
+  color: #b4d5e9;
+  margin: 2px 0 0 0;
+}
+
+.price-chart {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 3, 3, 0.527)), to(rgba(17, 17, 17, 0.911)));
+  background: linear-gradient(rgba(3, 3, 3, 0.527), rgba(17, 17, 17, 0.911));
+  width: 25%;
+  height: 65vh;
+  margin: 15px;
+  border: 3px solid #3d5a80;
+  border-radius: 3px;
+}
+
+#price {
+  display: none;
+  -webkit-animation: priceListAnimation 2s;
+          animation: priceListAnimation 2s;
+}
+
+.price h2 {
+  color: #98c1d9;
+  text-transform: uppercase;
+  text-align: center;
+  background: url("images/underline.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+h2 span {
+  font-size: .6rem;
+  text-transform: none;
+}
+
+.price h3 {
+  color: #98c1d9;
+  text-align: center;
+  text-transform: none;
+  font-size: 0.9rem;
+  font-weight: 100;
+  background: url("images/underline.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+.price li {
+  list-style: url("images/dimond.png");
+  font-size: .9rem;
+}
+
+.xIcon {
+  height: 16px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.xBtn {
+  background: none;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+}
+
+.contact {
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.form-elements {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 49, 49, 0.37)), to(rgba(17, 17, 17, 0.055)));
+  background: linear-gradient(rgba(49, 49, 49, 0.37), rgba(17, 17, 17, 0.055));
+  border-radius: 10px;
+  color: #98c1d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  padding: 25px;
+  float: right;
+  margin-right: 5%;
+  position: relative;
+  -webkit-animation: slideUp 2s;
+          animation: slideUp 2s;
+}
+
+.form-elements h2 {
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.form-elements label {
+  font-size: 1.1rem;
+  padding: 12px;
+  background: url("images/underline-long.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+}
+
+.form-elements input,
+textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  background: url("images/underline-long.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  text-align: center;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  resize: vertical;
+  color: #98c1d9;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+}
+
+.form-elements button {
+  background: url("images/underline.png");
+  background-position: bottom;
+  background-repeat: space;
+  -webkit-transition: ease-in-out, .2s;
+  transition: ease-in-out, .2s;
+  outline: none;
+  border: transparent;
+  text-align: center;
+  width: 20%;
+  margin-left: 40%;
+}
+
+.form-elements button:hover {
+  color: #b4d5e9;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.form-elements li {
+  list-style: url("images/dimond.png");
+  text-align: center;
+}
+
+.phone-email {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 49, 49, 0.37)), to(rgba(17, 17, 17, 0.055)));
+  background: linear-gradient(rgba(49, 49, 49, 0.37), rgba(17, 17, 17, 0.055));
+  border-radius: 10px;
+  width: 40%;
+  margin-left: 5%;
+  float: left;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: slideDown 2s;
+          animation: slideDown 2s;
+}
+
+.phone-email li {
+  font-size: 14px;
+}
+
+.phone-email iframe {
+  width: 60%;
+  height: 40vh;
+  margin: 10% 0 5% 0;
+}
+
+.phone-num {
+  list-style: url("images/iphone-icon.png");
+  -webkit-transition: ease-in-out, .4s;
+  transition: ease-in-out, .4s;
+  margin-top: 10%;
+}
+
+.phone-num:hover {
+  list-style: url("images/dimond.png");
+}
+
+.email-ad {
+  list-style: url("images/email-icon.png");
+  -webkit-transition: ease-in-out, .4s;
+  transition: ease-in-out, .4s;
+}
+
+.email-ad:hover {
+  list-style: url("images/dimond.png");
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-animation: priceListAnimation 3s;
+          animation: priceListAnimation 3s;
+}
+
+.about-container h1 {
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: url("images/underline-long.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  text-align: left;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  color: white;
+}
+
+.about-container p {
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  word-wrap: break-word;
+  text-transform: none;
+  color: white;
+}
+
+.about-img-cn {
+  height: 75vh;
+}
+
+.about-img-cartoon {
+  height: 60vh;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.services {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 10% 1fr 1fr 1fr 1fr;
+      grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+  height: 75vh;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 5% 0 5%;
+  -webkit-animation: servicesAnimation 2s;
+          animation: servicesAnimation 2s;
+}
+
+.services-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5% 0;
+  border-bottom: 3px #98c1d9;
+}
+
+.services-content p {
+  width: 60%;
+  text-transform: none;
+  color: white;
+  padding: 1%;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+}
+
+.services-content h2 {
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  color: white;
+  padding: 6% 0 0 0;
+  background: url("images/underline-long.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+}
+
+.services-content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40vh;
+  text-align: center;
+}
+
+.services h2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-left: 10%;
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  font-size: 1.9rem;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  padding: 10px;
+  background: url("images/underline-long.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+}
+
+.html-css-logo {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+.services p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  width: 75%;
+  margin: 20px 0 0 10%;
+  text-align: left;
+  color: #98c1d9;
+  text-transform: uppercase;
+  font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  color: white;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #98c1d994;
+  font-size: .6rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  cursor: default;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer img {
+  height: 16px;
+  margin-left: 2%;
+  margin-right: .5%;
+  opacity: 90%;
+}
+
+footer a {
+  margin-left: 2%;
+  margin-right: .5%;
+}
+
+.mobile-footer {
+  display: none;
+  color: #98c1d994;
+  font-size: .6rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  cursor: default;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.mobile-footer img {
+  height: 16px;
+  margin-left: 2%;
+  margin-right: .5%;
+  opacity: 90%;
+}
+
+@-webkit-keyframes priceListAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes priceListAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes priceListAnimationX {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes priceListAnimationX {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes servicesAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(40px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@keyframes servicesAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(40px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .main-content h1 {
+    padding: 30px 20% 10px 20%;
+    background-position: bottom;
+    margin-left: 0;
+  }
+  .devices {
+    width: 50%;
+    padding: 5% 0;
+  }
+  .about-img-cn {
+    height: 60vh;
+  }
+  .html-css-logo {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    width: 100%;
+  }
+  .services {
+    -ms-grid-columns: 1fr 1fr 1.4fr;
+        grid-template-columns: 1fr 1fr 1.4fr;
+    height: 100vh;
+    padding: 10% 0 0 0;
+  }
+  .services h2 {
+    margin-left: 8%;
+    background-size: contain;
+  }
+  .services-content {
+    padding: 0 0;
+  }
+  .contact {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+  .form-elements {
+    background: transparent;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+    margin: 0 10px;
+    float: none;
+    margin-right: 0;
+    height: 70vh;
+  }
+  .form-elements button {
+    width: 15%;
+    margin-left: 0;
+  }
+  .phone-email {
+    background: transparent;
+    width: 100%;
+    margin-left: 0;
+    float: none;
+    position: relative;
+  }
+  .form-elements label {
+    padding: 12px 30%;
+    background-position: bottom;
+  }
+  .form-elements input,
+  textarea {
+    padding: 10px 25%;
+    background-position: bottom;
+  }
+  .price-chart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price {
+    width: 90%;
+  }
+  footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  .mobile-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobile-nav {
+    display: none;
+    width: 100%;
+    -webkit-animation: priceListAnimation 1.5s;
+            animation: priceListAnimation 1.5s;
+  }
+  .mobile-nav-row-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+  }
+  .mobile-nav-row-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+  }
+  .mobile-header img {
+    width: 100%;
+    padding: 8px 8px;
+  }
+  .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .main-content h1 {
+    padding: 30px 20% 10px 20%;
+    background-position: bottom;
+    background-size: contain;
+    margin-left: 0;
+  }
+  .devices {
+    width: 80%;
+    padding: 5% 0;
+  }
+  .main-content p {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .about-img-cn {
+    height: 40vh;
+  }
+  .about-container {
+    margin: 20% 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .about-container h1 {
+    background-size: contain;
+  }
+  .services {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0 2%;
+  }
+  .services-content {
+    height: 100%;
+  }
+  .services-content p {
+    width: 90%;
+    text-transform: none;
+    color: white;
+    padding: 0;
+    text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  }
+  .services-content h2 {
+    color: #98c1d9;
+    text-transform: uppercase;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    font-weight: 300;
+    color: white;
+    padding: 6% 0 0 0;
+    background: url("images/underline-long.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  }
+  .services-content-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin: 10% 0;
+    text-align: center;
+  }
+  .services h2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-left: 10%;
+    color: #98c1d9;
+    text-transform: uppercase;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    font-weight: 300;
+    font-size: 1.9rem;
+    text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+    padding: 10px;
+    background: url("images/underline-long.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+  }
+  .html-css-logo {
+    width: 50%;
+  }
+  .services p {
+    width: 100%;
+    margin: 5% 0;
+    text-align: center;
+    color: #98c1d9;
+    text-transform: uppercase;
+    font-family: "Eras ITC", "Eras Light ITC", sans-serif;
+    font-weight: 300;
+    text-transform: none;
+    text-shadow: 3px 3px 6px #535151, 1px 2px 5px #000000, -2px -4px 4px #000000, -1px 5px 4px #000000;
+    color: white;
+  }
+  .services h2 {
+    margin-left: 0;
+    background-size: contain;
+  }
+  .services-content {
+    padding: 0 0;
+  }
+  .contact {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+  .form-elements {
+    background: transparent;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+    margin: 0 10px;
+    float: none;
+    margin-right: 0;
+    height: 70vh;
+  }
+  .form-elements button {
+    width: 50%;
+    margin-left: 0;
+  }
+  .phone-email {
+    background: transparent;
+    width: 100%;
+    margin-left: 0;
+    float: none;
+    position: relative;
+  }
+  .form-elements label {
+    width: 100%;
+    background-position: bottom;
+    background-size: contain;
+  }
+  .form-elements input,
+  textarea {
+    width: 100%;
+    background-size: contain;
+    background-position: bottom;
+  }
+  .price-chart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price {
+    width: 90%;
+  }
+  footer {
+    display: none;
+  }
+  .mobile-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 5%;
+  }
+  #menu-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diligent Web Design - Toronto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- Background -->
+    <canvas id=c></canvas>
+    <div class="background"><img src="images/background.png" alt="Dimond Leather Background"></div>
+
+    <!-- Header -->
+    <header>
+        <a href="about.html">
+            <li style="list-style: url('images/dimond.png')">About</li>
+        </a>
+        <a href="services.html">
+            <li>Services</li>
+        </a>
+        <img src="images/dwd logo.png" onclick="returnHome()" alt="">
+        <a href="contact.html">
+            <li>Contact</li>
+        </a>
+        <a href="tel:1-705-351-0819">
+            <li class="phone">705-351-0819</li>
+        </a>
+    </header>
+
+    <div class="mobile-header">
+        <img src="images/dwd logo.png" onclick="returnHome()" alt="" id="three">
+        <div id="four"> <button id="menu-icon" onclick="displayMobileNav(); peaceMenuIcon();"><li style="list-style: url('images/hamburger.png');">Menu</li></button></div>
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-row-1">
+                <a href="about.html" id="one">
+                    <li>About</li>
+                </a>
+                <a href="services.html" id="two">
+                    <li>Services</li>
+                </a>
+            </div>
+            <div class="mobile-nav-row-2">
+                <a href="contact.html" id="three">
+                    <li>Contact</li>
+                </a>
+                <a href="tel:1-705-351-0819" id="four">
+                    <li class="phone">705-351-0819</li>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Content -->
+
+    <div class="about-container">
+        <div class="about-text">
+            <h1>About</h1>
+
+
+            <p>Diligent Web Design is a small company based out of Toronto. We specialize in creating unique designs to ensure our customer's websites stand out amongst others.
+                <br>
+                <br> Our goal is to make budget-friendly websites and designs. Wheater it is a landing page, multiple page website, or a logo design we have you covered.
+                <br>
+                <br> Diligent offers free quotes and would be happy to assist you at any time as we are open 24/7.
+                <br>
+                <br> Feel free to contact us and start your free quote today, we love your ideas and hope we can make them become a reality!</p>
+        </div>
+
+        <img src="images/cn tower.png" class="about-img-cn" alt="Responsive Devices">
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <a href="tel:1-705-351-0819"> <img src="images/iphone-icon.png" alt=""></a>
+        <p>705-351-0819</p>
+        <a href="mailto: CONTACT.DILIGENTWEBDESIGN@GMAIL.COM"> <img src="images/email-icon.png" alt=""> </a>
+        <p>Contact.DiligentWebDesign@Gmail.com</p>
+        <a href="https://www.instagram.com/diligentwebdesign/" target="_blank"> <img src="images/instagram.png" alt=""> </a>
+        <p>DiligentWebDesign</p>
+        <img src="images/dwd logo footer.png" alt="">
+        <p>2021 DILIGENT WEB DESIGN INC. ALL RIGHTS RESERVED.PRIVACY POLICY.DISCLAIMER.</p>
+    </footer>
+    <div class="mobile-footer">
+        <img src="images/dwd logo footer.png" alt="">
+        <p>2021 DILIGENT WEB DESIGN INC. ALL RIGHTS RESERVED.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js " integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js " integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin=" anonymous "></script>
+    <script src="background.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
